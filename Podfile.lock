@@ -1,0 +1,16 @@
+PODS:
+  - FakeTouch (0.0.1)
+
+DEPENDENCIES:
+  - FakeTouch (from `./localLib/FakeTouch`)
+
+EXTERNAL SOURCES:
+  FakeTouch:
+    :path: "./localLib/FakeTouch"
+
+SPEC CHECKSUMS:
+  FakeTouch: e4f3111f9c01f1b835e938c8495b3e73d259d402
+
+PODFILE CHECKSUM: 5d34e133c237f8b6dfd871f3d78b5c8baa51e14c
+
+COCOAPODS: 1.11.3
