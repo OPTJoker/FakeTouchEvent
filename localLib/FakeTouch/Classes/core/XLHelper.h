@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)send:(NSArray <UITouch*> *)touches;
 
++ (double)machAbsTimeIntoSeconds:(uint64_t) mach_time;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,6 +8,7 @@
 #import "UITouch+XLFake.h"
 #import "IOHIDEvent+KIF.h"
 #import "UITouch+Private.h"
+#import <objc/runtime.h>
 
 @implementation UITouch (XLFake)
 
@@ -23,7 +24,7 @@
     [self setWindow:window];
     [self setView:view];
     
-    //[self setTapCount:1];
+    [self setTapCount:1];
     [self setPhase:UITouchPhaseBegan];
     [self _setIsFirstTouchForView:YES];
     [self _setIsTapToClick:YES];

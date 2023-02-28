@@ -23,10 +23,11 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) RecordState recordState;
 
 @property (nonatomic, strong) NSDate *startDate;
+@property (nonatomic, assign) NSTimeInterval startTime;
 
 @property (nonatomic, strong) NSMutableArray <XLTouchEvent*>*eventsArr;
 
-- (void)addEvent:(UIEvent *)uiEvent inWindow:(UIWindow *)window;
+- (void)handleEvent:(UIEvent *)uiEvent onWindow:(UIWindow *)window;
 
 - (void)startRecord;
 

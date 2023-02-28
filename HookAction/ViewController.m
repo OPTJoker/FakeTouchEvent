@@ -65,8 +65,7 @@ UIGestureRecognizerDelegate
         RecordState state = [[change valueForKey:@"new"] unsignedIntValue];
         NSString *t = @"Ready";
         UIColor *bgColor = kBlueColor;
-        //NSLog(@"s: %d", state);
-        //NSLog(@"change: %@", change);
+
         switch (state) {
             case RecordState_Recording:
                 t = @"录制中，摇一摇停止 ⏹";
@@ -181,9 +180,9 @@ UIGestureRecognizerDelegate
 
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    NSLog(@"\nxllog velocity:%@\n\n", NSStringFromCGPoint(velocity));
-    NSLog(@"\nxllog offset:%@", NSStringFromCGPoint(*targetContentOffset));
-    NSLog(@"\nxllog gests:%@", scrollView.gestureRecognizers);
+//    NSLog(@"\nxllog velocity:%@\n\n", NSStringFromCGPoint(velocity));
+//    NSLog(@"\nxllog offset:%@", NSStringFromCGPoint(*targetContentOffset));
+//    NSLog(@"\nxllog gests:%@", scrollView.gestureRecognizers);
 }
 
 @end

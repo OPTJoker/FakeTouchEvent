@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *tid;
 @property (nonatomic, assign) CGPoint location;
 @property (nonatomic, assign) UITouchPhase phase;
+@property (nonatomic, assign) uint64_t machAbsoluteTime;
 
 - (instancetype)initWithTid:(NSString*)tid :(CGPoint)location :(UITouchPhase)phase;
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8074B24529A8E5BD00927F77 /* RecordUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8074B24429A8E5BD00927F77 /* RecordUITest.m */; };
+		8074B24729A8E5BD00927F77 /* RecordUITestLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8074B24629A8E5BD00927F77 /* RecordUITestLaunchTests.m */; };
 		80C1F457298B69EC00E380DD /* XLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1F456298B69EC00E380DD /* XLScrollView.m */; };
 		80D36275298913E9008AE8F5 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D36274298913E9008AE8F5 /* IOKit.framework */; };
 		80D362DE29893F0F008AE8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D362C729893F0F008AE8F5 /* Assets.xcassets */; };
@@ -19,6 +21,23 @@
 		80D362EA2989406E008AE8F5 /* Pods_HookAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D362E92989406E008AE8F5 /* Pods_HookAction.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8074B24829A8E5BD00927F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80059A802969288200ADEBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80059A872969288200ADEBD9;
+			remoteInfo = HookAction;
+		};
+		8074B25729A8E86700927F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80059A802969288200ADEBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80059A872969288200ADEBD9;
+			remoteInfo = HookAction;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1A7427B94BD8D4E24318BD8F /* Pods-HookAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HookAction.release.xcconfig"; path = "Target Support Files/Pods-HookAction/Pods-HookAction.release.xcconfig"; sourceTree = "<group>"; };
 		720F0C0F06EBDD40081AA3F0 /* Pods_HookAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HookAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +45,10 @@
 		80059A882969288200ADEBD9 /* HookAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		802FDFD52988EB17005D345D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		804E6AAD298948640059DACC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8074B24229A8E5BD00927F77 /* RecordUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8074B24429A8E5BD00927F77 /* RecordUITest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordUITest.m; sourceTree = "<group>"; };
+		8074B24629A8E5BD00927F77 /* RecordUITestLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordUITestLaunchTests.m; sourceTree = "<group>"; };
+		8074B25129A8E86700927F77 /* UnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1F455298B69EC00E380DD /* XLScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLScrollView.h; sourceTree = "<group>"; };
 		80C1F456298B69EC00E380DD /* XLScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLScrollView.m; sourceTree = "<group>"; };
 		80D36274298913E9008AE8F5 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -52,6 +75,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8074B23F29A8E5BD00927F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8074B24E29A8E86700927F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				80D362C429893F0F008AE8F5 /* HookAction */,
+				8074B24329A8E5BD00927F77 /* RecordUITest */,
 				80059A892969288200ADEBD9 /* Products */,
 				802FDFD42988EB17005D345D /* Frameworks */,
 				D3245A64FDCEB6B68687E20B /* Pods */,
@@ -69,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				80059A882969288200ADEBD9 /* HookAction.app */,
+				8074B24229A8E5BD00927F77 /* RecordUITest.xctest */,
+				8074B25129A8E86700927F77 /* UnitTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +122,15 @@
 				720F0C0F06EBDD40081AA3F0 /* Pods_HookAction.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8074B24329A8E5BD00927F77 /* RecordUITest */ = {
+			isa = PBXGroup;
+			children = (
+				8074B24429A8E5BD00927F77 /* RecordUITest.m */,
+				8074B24629A8E5BD00927F77 /* RecordUITestLaunchTests.m */,
+			);
+			path = RecordUITest;
 			sourceTree = "<group>";
 		};
 		80D362C429893F0F008AE8F5 /* HookAction */ = {
@@ -143,6 +192,42 @@
 			productReference = 80059A882969288200ADEBD9 /* HookAction.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8074B24129A8E5BD00927F77 /* RecordUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8074B24A29A8E5BD00927F77 /* Build configuration list for PBXNativeTarget "RecordUITest" */;
+			buildPhases = (
+				8074B23E29A8E5BD00927F77 /* Sources */,
+				8074B23F29A8E5BD00927F77 /* Frameworks */,
+				8074B24029A8E5BD00927F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8074B24929A8E5BD00927F77 /* PBXTargetDependency */,
+			);
+			name = RecordUITest;
+			productName = RecordUITest;
+			productReference = 8074B24229A8E5BD00927F77 /* RecordUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8074B25029A8E86700927F77 /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8074B25929A8E86700927F77 /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				8074B24D29A8E86700927F77 /* Sources */,
+				8074B24E29A8E86700927F77 /* Frameworks */,
+				8074B24F29A8E86700927F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8074B25829A8E86700927F77 /* PBXTargetDependency */,
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = 8074B25129A8E86700927F77 /* UnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +240,14 @@
 				TargetAttributes = {
 					80059A872969288200ADEBD9 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					8074B24129A8E5BD00927F77 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 80059A872969288200ADEBD9;
+					};
+					8074B25029A8E86700927F77 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 80059A872969288200ADEBD9;
 					};
 				};
 			};
@@ -172,6 +265,8 @@
 			projectRoot = "";
 			targets = (
 				80059A872969288200ADEBD9 /* HookAction */,
+				8074B24129A8E5BD00927F77 /* RecordUITest */,
+				8074B25029A8E86700927F77 /* UnitTest */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +279,20 @@
 				80D362E129893F0F008AE8F5 /* Main.storyboard in Resources */,
 				80D362DE29893F0F008AE8F5 /* Assets.xcassets in Resources */,
 				80D362E029893F0F008AE8F5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8074B24029A8E5BD00927F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8074B24F29A8E86700927F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +353,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8074B23E29A8E5BD00927F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8074B24529A8E5BD00927F77 /* RecordUITest.m in Sources */,
+				8074B24729A8E5BD00927F77 /* RecordUITestLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8074B24D29A8E86700927F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8074B24929A8E5BD00927F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80059A872969288200ADEBD9 /* HookAction */;
+			targetProxy = 8074B24829A8E5BD00927F77 /* PBXContainerItemProxy */;
+		};
+		8074B25829A8E86700927F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80059A872969288200ADEBD9 /* HookAction */;
+			targetProxy = 8074B25729A8E86700927F77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		80D362C929893F0F008AE8F5 /* LaunchScreen.storyboard */ = {
@@ -398,6 +536,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +572,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,6 +583,78 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8074B24B29A8E5BD00927F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC3J3NU4D8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharon.fake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HookAction;
+			};
+			name = Debug;
+		};
+		8074B24C29A8E5BD00927F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC3J3NU4D8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharon.fake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HookAction;
+			};
+			name = Release;
+		};
+		8074B25A29A8E86700927F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC3J3NU4D8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharon.fake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HookAction;
+			};
+			name = Debug;
+		};
+		8074B25B29A8E86700927F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC3J3NU4D8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharon.fake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HookAction;
 			};
 			name = Release;
 		};
@@ -463,6 +675,24 @@
 			buildConfigurations = (
 				80059AA22969288400ADEBD9 /* Debug */,
 				80059AA32969288400ADEBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8074B24A29A8E5BD00927F77 /* Build configuration list for PBXNativeTarget "RecordUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8074B24B29A8E5BD00927F77 /* Debug */,
+				8074B24C29A8E5BD00927F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8074B25929A8E86700927F77 /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8074B25A29A8E86700927F77 /* Debug */,
+				8074B25B29A8E86700927F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

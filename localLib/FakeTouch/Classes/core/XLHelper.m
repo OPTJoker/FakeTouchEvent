@@ -7,6 +7,7 @@
 
 #import "XLHelper.h"
 #import "FakeTouch.h"
+#import <mach/mach_time.h>
 
 @implementation XLHelper
 
@@ -60,14 +61,21 @@
 
     [[UIApplication sharedApplication] sendEvent:event];
     [touches enumerateObjectsUsingBlock:^(UITouch * _Nonnull touch, NSUInteger idx, BOOL * _Nonnull stop) {
-//        if (touch.phase == UITouchPhaseBegan
-//            //|| touch.phase == UITouchPhaseMoved
-//            ) {
-//            //[touch setPhase:UITouchPhaseStationary];
-//            [touch updateTimestamp];
-//        }
-        [touch updateTimestamp];
+        if (touch.phase == UITouchPhaseBegan
+            || touch.phase == UITouchPhaseMoved
+            ) {
+            [touch setPhase:UITouchPhaseStationary];
+            [touch updateTimestamp];
+        }
     }];
+}
+
++ (double)machAbsTimeIntoSeconds:(uint64_t) mach_time
+{
+    mach_timebase_info_data_t _clock_timebase;
+    mach_timebase_info(&_clock_timebase); // Initialize timebase_info
+    double nanos = (mach_time * _clock_timebase.numer) / _clock_timebase.denom;
+    return nanos / 1e9;
 }
 
 @end

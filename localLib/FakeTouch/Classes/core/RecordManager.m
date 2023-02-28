@@ -7,7 +7,9 @@
 
 #import "RecordManager.h"
 #import "UITouch+XLFake.h"
+#import "XLHelper.h"
 #import <CoreMotion/CoreMotion.h>
+#import <mach/mach_time.h>
 
 
 @implementation RecordManager
@@ -34,6 +36,7 @@
     logger(@"【record - start】");
     
     self.startDate = [NSDate date];
+    self.startTime = [XLHelper machAbsTimeIntoSeconds:mach_absolute_time()];
     [self.eventsArr removeAllObjects];
     
     self.recordState = RecordState_Recording;
@@ -45,7 +48,7 @@
     self.recordState = RecordState_Ready;
 }
 
-- (void)addEvent:(UIEvent *)uiEvent inWindow:(UIWindow *)window
+- (void)handleEvent:(UIEvent *)uiEvent onWindow:(UIWindow *)window
 {
     if ([RecordManager share].recordState != RecordState_Recording)
         return;
@@ -57,6 +60,9 @@
     logger(@"【record - addAction");
     
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:self.startDate];
+    NSTimeInterval curTime = [XLHelper machAbsTimeIntoSeconds:mach_absolute_time()];
+    NSTimeInterval timeInterval2 = curTime - self.startTime;
+    NSLog(@"\ntlog1:%f\ntlog2:%f\n", timeInterval, timeInterval2);
     
     NSMutableArray *touches = @[].mutableCopy;
     [uiTouches enumerateObjectsUsingBlock:^(UITouch * _Nonnull uiTouch, BOOL * _Nonnull stop) {
@@ -70,16 +76,18 @@
     
     XLTouchEvent *event = [[XLTouchEvent alloc]
                           initWithTouches:touches
-                          :timeInterval];
+                          :timeInterval2];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.eventsArr addObject:event];
-    });
+    [self.eventsArr addObject:event];
+    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//
+//    });
 }
 
 
 void logger(NSString *msg) {
-    NSLog(@"xllog：%@", msg);
+//    NSLog(@"xllog：%@", msg);
 }
 
 #pragma mark

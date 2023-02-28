@@ -33,6 +33,7 @@
     NSMutableArray *touches = @[].mutableCopy;
     [xlEvent.touches enumerateObjectsUsingBlock:^(XLTouch * _Nonnull touch, NSUInteger idx, BOOL * _Nonnull stop) {
         UITouch *uiTouch = [XLHelper makeupUITouch:touch];
+        NSLog(@"xllog (%ld)fakeTime:%f", (long)uiTouch.phase, uiTouch.timestamp);
         [touches addObject:uiTouch];
     }];
     
